@@ -1,0 +1,13 @@
+<img [src] ="{{https://randomuser.me/api/portraits/lego/2.jpg}}" [alt]="nom">
+ <p> Hello {{nom}} !</p>
+  
+<ul>
+  <li id="hide-stuff">age: {{User.age}}</li>
+  <li>nom: {{User.name}}</li>
+  <li>prenom: {{User.firstName}}</li>
+  <li>citation: {{User.quote}}</li>
+</ul>
+
+<input [(ngModel)]="User.quote" placeholder="même coupe !">
+
+<button (click)="cacherAge()">Afficher/masquer l'age</button>
