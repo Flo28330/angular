@@ -1,6 +1,6 @@
-<img [src] ="{{https://randomuser.me/api/portraits/lego/2.jpg}}" [alt]="nom">
- <p> Hello {{nom}} !</p>
-  
+
+<img [src]="User.photo">
+
 <ul>
   <li id="hide-stuff">age: {{User.age}}</li>
   <li>nom: {{User.name}}</li>
@@ -8,6 +8,6 @@
   <li>citation: {{User.quote}}</li>
 </ul>
 
-<input [(ngModel)]="User.quote" placeholder="même coupe !">
+<input [(ngModel)]="User.quote" placeholder="Youpy I">
 
 <button (click)="cacherAge()">Afficher/masquer l'age</button>

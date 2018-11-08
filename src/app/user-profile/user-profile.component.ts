@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  User = {
+
+  public User = {
     name : 'Doe',
     firstName : 'John',
     age : 25,
-    quote : 'Yes ! I have !',
+    quote : '',
     photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
+
   constructor() { }
 
   ngOnInit() {
@@ -26,5 +28,5 @@ export class UserProfileComponent implements OnInit {
       document.getElementById('hide-stuff').style.visibility='visible';  
     }
   }
-}
 
+}

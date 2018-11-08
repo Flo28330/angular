@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    UserProfileComponent
-
-
+    UserProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -32,8 +33,6 @@ import { RouterModule } from '@angular/router';
       }
     ])
   ],
-    
-  
   providers: [],
   bootstrap: [AppComponent]
 })
