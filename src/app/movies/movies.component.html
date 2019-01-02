@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h1>
+     Films préférés Walt Dysney !
+  </h1>
+</div>
+
+
+<ul *appShowMovies="ShowMoviesDirective">
+  <li appHighlight *ngFor="let movie of listMovies">
+    {{ movie }}
+  </li>
+</ul>

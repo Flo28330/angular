@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+
+
+  li{
+    background-color: black;
+    font-size: 150%;
+    color: rgb(43, 54, 92);
+}

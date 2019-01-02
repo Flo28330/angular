@@ -7,31 +7,42 @@ import { FormsModule } from '@angular/forms';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 import { RouterModule } from '@angular/router';
+import { MoviesComponent } from './movies/movies.component';
+import { ShowMoviesDirective } from './show-movies.directive';
+import { HighLightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
+    MoviesComponent,
+    ShowMoviesDirective,
+    HighLightDirective,
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      {
-        "path":"",
-        "component":UserProfileComponent
-      },
+
       {
         "path":"sign-up",
-        "component":SignUpComponent
+        "component":SignUpComponent,
+        "pathMatch": "full"
       },
       {
         "path":"user",
-        "component":UserProfileComponent
-      }
+        "component":UserProfileComponent,
+        "pathMatch": "full"
+      },
+      {
+        "path":"movies",
+        "component":MoviesComponent,
+        "pathMatch": "full"
+      },
     ])
+
   ],
   providers: [],
   bootstrap: [AppComponent]
