@@ -10,7 +10,7 @@ export class MoviesComponent implements OnInit {
 
   public ShowMoviesDirective = true;
   
-  public listMovies:string[] = ["DUMBO", "PINOCCHIO", "PETER PAN", "MARY POPPINS","LE LIVRE DE LA JUNGLE"];
+  public listMovies:string[] = ["PINOCCHIO", "PETER PAN", "MARY POPPINS","LE LIVRE DE LA JUNGLE"];
   
 constructor() { }
 
